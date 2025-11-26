@@ -1,0 +1,31 @@
+{
+  "task_id": "go_to_the_team_page_and_click_on_crypto_category_t",
+  "task_query": "Go to the Team page and click on Crypto category to see crypto team members",
+  "app_name": "Linear",
+  "workflow_name": "go_to_the_team_page_and_click_on_crypto_category_t_20251123_135233",
+  "start_time": "2025-11-23T13:52:33.943495",
+  "status": "failed",
+  "total_steps": 1,
+  "last_update": "2025-11-23T13:52:42.848629",
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Navigate to https://a16z.com/team/",
+      "action_type": "navigate",
+      "action_target": "None",
+      "screenshot_path": "step_01_navigate.png",
+      "url": "https://a16z.com/team/",
+      "timestamp": "2025-11-23T13:52:42.848346",
+      "reasoning": "Initial page load",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Forced capture",
+        "page_title": "Meet the a16z Team, Partners & Advisers | a16z"
+      }
+    }
+  ],
+  "duration_seconds": 15.645126,
+  "success": false,
+  "error_message": "Target page, context or browser has been closed",
+  "end_time": "2025-11-23T13:52:49.588908"
+}

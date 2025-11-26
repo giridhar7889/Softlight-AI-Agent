@@ -1,0 +1,91 @@
+{
+  "task_id": "go_to_level.fyi_and_show_how_to_check_jp_morgan_ma",
+  "task_query": "Go to level.fyi and show how to check JP Morgan managing director salary",
+  "app_name": "Linear",
+  "workflow_name": "go_to_level.fyi_and_show_how_to_check_jp_morgan_ma_20251125_115208",
+  "start_time": "2025-11-25T11:52:08.129949",
+  "status": "completed",
+  "total_steps": 5,
+  "last_update": "2025-11-25T11:53:27.476770",
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Navigate to https://www.levels.fyi",
+      "action_type": "navigate",
+      "action_target": "None",
+      "screenshot_path": "step_01_navigate.png",
+      "url": "https://www.levels.fyi/?tab=levels",
+      "timestamp": "2025-11-25T11:52:15.000421",
+      "reasoning": "Initial page load",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Forced capture",
+        "page_title": "Levels.fyi | Salaries & Tools to Level Up Your Career"
+      }
+    },
+    {
+      "step_number": 2,
+      "description": "Click 'Finance' button",
+      "action_type": "click",
+      "action_target": "None",
+      "screenshot_path": "step_02_click.png",
+      "url": "https://www.levels.fyi/?tab=levels",
+      "timestamp": "2025-11-25T11:52:33.414164",
+      "reasoning": "Navigating to the finance section should help find salary information for JP Morgan, a financial institution.",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Initial state",
+        "page_title": "Levels.fyi | Salaries & Tools to Level Up Your Career"
+      }
+    },
+    {
+      "step_number": 3,
+      "description": "Failed to parse action, waiting",
+      "action_type": "wait",
+      "action_target": "None",
+      "screenshot_path": "step_03_wait.png",
+      "url": "https://www.levels.fyi/?tab=levels",
+      "timestamp": "2025-11-25T11:52:41.190666",
+      "reasoning": "Parse error: No JSON found in response",
+      "metadata": {
+        "difference": 0.25,
+        "reason": "Change after wait",
+        "page_title": "Levels.fyi | Salaries & Tools to Level Up Your Career"
+      }
+    },
+    {
+      "step_number": 4,
+      "description": "Click 'By Company' link",
+      "action_type": "click",
+      "action_target": "None",
+      "screenshot_path": "step_04_click.png",
+      "url": "https://www.levels.fyi/companies",
+      "timestamp": "2025-11-25T11:53:27.066110",
+      "reasoning": "Navigating to the company-specific salary data will help find JP Morgan's managing director salary.",
+      "metadata": {
+        "difference": 0.28125,
+        "reason": "Change after click",
+        "page_title": "Company Directory | Levels.fyi"
+      }
+    },
+    {
+      "step_number": 5,
+      "description": "GoalMonitor detected target information",
+      "action_type": "done",
+      "action_target": "None",
+      "screenshot_path": "step_05_done.png",
+      "url": "https://www.levels.fyi/companies",
+      "timestamp": "2025-11-25T11:53:27.476644",
+      "reasoning": "Required keywords present on page",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Forced capture",
+        "page_title": "Company Directory | Levels.fyi"
+      }
+    }
+  ],
+  "duration_seconds": 79.347315,
+  "success": true,
+  "error_message": "",
+  "end_time": "2025-11-25T11:53:27.477406"
+}

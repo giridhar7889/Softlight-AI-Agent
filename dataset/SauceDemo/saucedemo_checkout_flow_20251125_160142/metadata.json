@@ -1,0 +1,77 @@
+{
+  "task_id": "saucedemo_checkout_flow",
+  "task_query": "SauceDemo: Checkout with Agent Smith, zip 12345, and verify Thank You page",
+  "app_name": "Linear",
+  "workflow_name": "saucedemo_checkout_flow_20251125_160142",
+  "start_time": "2025-11-25T16:01:42.098165",
+  "status": "completed",
+  "start_url": "https://www.saucedemo.com/",
+  "total_steps": 4,
+  "last_update": "2025-11-25T16:01:44.984981",
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Added Backpack and Bike Light prior to checkout",
+      "action_type": "prepare",
+      "action_target": "Inventory grid buttons",
+      "screenshot_path": "step_01_prepare.png",
+      "url": "https://www.saucedemo.com/inventory.html",
+      "timestamp": "2025-11-25T16:01:44.455837",
+      "reasoning": "Cart now has two items before starting checkout",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Manual capture",
+        "page_title": "Swag Labs"
+      }
+    },
+    {
+      "step_number": 2,
+      "description": "Filled checkout information with Agent Smith 12345",
+      "action_type": "form",
+      "action_target": "Checkout form",
+      "screenshot_path": "step_02_form.png",
+      "url": "https://www.saucedemo.com/checkout-step-one.html",
+      "timestamp": "2025-11-25T16:01:44.619653",
+      "reasoning": "Ready to continue to order summary",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Manual capture",
+        "page_title": "Swag Labs"
+      }
+    },
+    {
+      "step_number": 3,
+      "description": "Viewed order summary before finishing",
+      "action_type": "summary",
+      "action_target": "Checkout overview",
+      "screenshot_path": "step_03_summary.png",
+      "url": "https://www.saucedemo.com/checkout-step-two.html",
+      "timestamp": "2025-11-25T16:01:44.839524",
+      "reasoning": "Verifying items and totals before completion",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Manual capture",
+        "page_title": "Swag Labs"
+      }
+    },
+    {
+      "step_number": 4,
+      "description": "Finished order and saw 'Thank You' message",
+      "action_type": "confirmation",
+      "action_target": "Thank you screen",
+      "screenshot_path": "step_04_confirmation.png",
+      "url": "https://www.saucedemo.com/checkout-complete.html",
+      "timestamp": "2025-11-25T16:01:44.984881",
+      "reasoning": "Confirms checkout completion with success banner",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Manual capture",
+        "page_title": "Swag Labs"
+      }
+    }
+  ],
+  "duration_seconds": 2.898792,
+  "success": true,
+  "error_message": "",
+  "end_time": "2025-11-25T16:01:44.997218"
+}

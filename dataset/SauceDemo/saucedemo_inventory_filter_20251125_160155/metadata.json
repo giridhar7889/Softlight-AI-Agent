@@ -1,0 +1,77 @@
+{
+  "task_id": "saucedemo_inventory_filter",
+  "task_query": "SauceDemo: Sort inventory by price (high to low) and add cheapest item from the sorted view",
+  "app_name": "Linear",
+  "workflow_name": "saucedemo_inventory_filter_20251125_160155",
+  "start_time": "2025-11-25T16:01:55.194132",
+  "status": "completed",
+  "start_url": "https://www.saucedemo.com/",
+  "total_steps": 4,
+  "last_update": "2025-11-25T16:01:58.807160",
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Logged in and reached inventory list",
+      "action_type": "login",
+      "action_target": "Inventory container",
+      "screenshot_path": "step_01_login.png",
+      "url": "https://www.saucedemo.com/inventory.html",
+      "timestamp": "2025-11-25T16:01:57.517926",
+      "reasoning": "Baseline before sorting",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Manual capture",
+        "page_title": "Swag Labs"
+      }
+    },
+    {
+      "step_number": 2,
+      "description": "Sorted inventory by price high to low",
+      "action_type": "sort",
+      "action_target": "Sorting dropdown",
+      "screenshot_path": "step_02_sort.png",
+      "url": "https://www.saucedemo.com/inventory.html",
+      "timestamp": "2025-11-25T16:01:58.343461",
+      "reasoning": "Inventory order now shows most expensive items first",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Manual capture",
+        "page_title": "Swag Labs"
+      }
+    },
+    {
+      "step_number": 3,
+      "description": "Added the cheapest item after sorting",
+      "action_type": "add-to-cart",
+      "action_target": "Last item's Add to Cart button",
+      "screenshot_path": "step_03_add-to-cart.png",
+      "url": "https://www.saucedemo.com/inventory.html",
+      "timestamp": "2025-11-25T16:01:58.664129",
+      "reasoning": "Demonstrates grabbing the least expensive product from the sorted view",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Manual capture",
+        "page_title": "Swag Labs"
+      }
+    },
+    {
+      "step_number": 4,
+      "description": "Viewed cart to confirm cheapest item was added",
+      "action_type": "cart",
+      "action_target": "Cart page",
+      "screenshot_path": "step_04_cart.png",
+      "url": "https://www.saucedemo.com/cart.html",
+      "timestamp": "2025-11-25T16:01:58.807059",
+      "reasoning": "Cart badge and line item confirm the action",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Manual capture",
+        "page_title": "Swag Labs"
+      }
+    }
+  ],
+  "duration_seconds": 3.623253,
+  "success": true,
+  "error_message": "",
+  "end_time": "2025-11-25T16:01:58.817643"
+}

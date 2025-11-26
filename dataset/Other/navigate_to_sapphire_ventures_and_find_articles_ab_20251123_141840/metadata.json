@@ -1,0 +1,31 @@
+{
+  "task_id": "navigate_to_sapphire_ventures_and_find_articles_ab",
+  "task_query": "Navigate to Sapphire Ventures and find articles about 'Elise AI' in the Perspectives or Blog section",
+  "app_name": "Linear",
+  "workflow_name": "navigate_to_sapphire_ventures_and_find_articles_ab_20251123_141840",
+  "start_time": "2025-11-23T14:18:40.103335",
+  "status": "failed",
+  "total_steps": 1,
+  "last_update": "2025-11-23T14:18:46.273491",
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Navigate to https://sapphireventures.com",
+      "action_type": "navigate",
+      "action_target": "None",
+      "screenshot_path": "step_01_navigate.png",
+      "url": "https://sapphireventures.com/",
+      "timestamp": "2025-11-23T14:18:46.273247",
+      "reasoning": "Initial page load",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Forced capture",
+        "page_title": "Sapphire Ventures | Enterprise VC"
+      }
+    }
+  ],
+  "duration_seconds": 12.128541,
+  "success": false,
+  "error_message": "Target page, context or browser has been closed",
+  "end_time": "2025-11-23T14:18:52.232168"
+}

@@ -1,0 +1,61 @@
+{
+  "task_id": "notion_help_center:_search_for_'database_filters'_",
+  "task_query": "Notion Help Center: search for 'database filters' and open the guide",
+  "app_name": "Linear",
+  "workflow_name": "notion_help_center:_search_for_'database_filters'__20251125_122917",
+  "start_time": "2025-11-25T12:29:17.969023",
+  "status": "completed",
+  "total_steps": 3,
+  "last_update": "2025-11-25T12:29:42.552977",
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Navigate to https://www.notion.so/help",
+      "action_type": "navigate",
+      "action_target": "None",
+      "screenshot_path": "step_01_navigate.png",
+      "url": "https://www.notion.com/help",
+      "timestamp": "2025-11-25T12:29:25.226342",
+      "reasoning": "Initial page load",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Forced capture",
+        "page_title": "Help, Support, and Documentation for Notion"
+      }
+    },
+    {
+      "step_number": 2,
+      "description": "Click on the search input field",
+      "action_type": "click",
+      "action_target": "None",
+      "screenshot_path": "step_02_click.png",
+      "url": "https://www.notion.com/help",
+      "timestamp": "2025-11-25T12:29:34.273643",
+      "reasoning": "Using the search function is the most direct way to find specific information like 'database filters'.",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Initial state",
+        "page_title": "Help, Support, and Documentation for Notion"
+      }
+    },
+    {
+      "step_number": 3,
+      "description": "GoalMonitor detected target information",
+      "action_type": "done",
+      "action_target": "None",
+      "screenshot_path": "step_03_done.png",
+      "url": "https://www.notion.com/help/category/databases",
+      "timestamp": "2025-11-25T12:29:42.552579",
+      "reasoning": "Required keywords present on page",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Forced capture",
+        "page_title": "Databases \u2013 Notion Help Center"
+      }
+    }
+  ],
+  "duration_seconds": 24.584405,
+  "success": true,
+  "error_message": "",
+  "end_time": "2025-11-25T12:29:42.553575"
+}

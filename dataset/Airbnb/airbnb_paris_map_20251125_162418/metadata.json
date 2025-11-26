@@ -1,0 +1,47 @@
+{
+  "task_id": "airbnb_paris_map",
+  "task_query": "Airbnb: Search Paris stays and explore the map view",
+  "app_name": "Airbnb",
+  "workflow_name": "airbnb_paris_map_20251125_162418",
+  "start_time": "2025-11-25T16:24:18.947246",
+  "status": "completed",
+  "start_url": "https://www.airbnb.com/",
+  "total_steps": 2,
+  "last_update": "2025-11-25T16:24:59.098321",
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Viewed Paris stay results",
+      "action_type": "search",
+      "action_target": "Search results grid",
+      "screenshot_path": "step_01_search.png",
+      "url": "https://www.airbnb.com/s/Paris/homes?refinement_paths%5B%5D=%2Fhomes&search_type=search_query",
+      "timestamp": "2025-11-25T16:24:27.886043",
+      "reasoning": "Baseline after running the Paris search",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Manual capture",
+        "page_title": "Airbnb | Paris - Vacation Rentals & Places to Stay - \u00cele-de-France"
+      }
+    },
+    {
+      "step_number": 2,
+      "description": "Opened the interactive map for Paris stays",
+      "action_type": "map",
+      "action_target": "Show map toggle",
+      "screenshot_path": "step_02_map.png",
+      "url": "https://www.airbnb.com/s/Paris/homes?refinement_paths%5B%5D=%2Fhomes&search_type=search_query",
+      "timestamp": "2025-11-25T16:24:59.097991",
+      "reasoning": "Map view reveals clustered price pins for the search",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Manual capture",
+        "page_title": "Airbnb | Paris - Vacation Rentals & Places to Stay - \u00cele-de-France"
+      }
+    }
+  ],
+  "duration_seconds": 70.188429,
+  "success": true,
+  "error_message": "",
+  "end_time": "2025-11-25T16:25:29.136401"
+}

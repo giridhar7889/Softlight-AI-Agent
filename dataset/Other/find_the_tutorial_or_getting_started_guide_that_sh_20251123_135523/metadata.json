@@ -1,0 +1,31 @@
+{
+  "task_id": "find_the_tutorial_or_getting_started_guide_that_sh",
+  "task_query": "Find the tutorial or getting started guide that shows how to create a Django project and run it",
+  "app_name": "Linear",
+  "workflow_name": "find_the_tutorial_or_getting_started_guide_that_sh_20251123_135523",
+  "start_time": "2025-11-23T13:55:23.233392",
+  "status": "failed",
+  "total_steps": 1,
+  "last_update": "2025-11-23T13:55:28.341570",
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Navigate to https://www.djangoproject.com",
+      "action_type": "navigate",
+      "action_target": "None",
+      "screenshot_path": "step_01_navigate.png",
+      "url": "https://www.djangoproject.com/",
+      "timestamp": "2025-11-23T13:55:28.341469",
+      "reasoning": "Initial page load",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Forced capture",
+        "page_title": "The web framework for perfectionists with deadlines | Django"
+      }
+    }
+  ],
+  "duration_seconds": 11.602997,
+  "success": false,
+  "error_message": "Target page, context or browser has been closed",
+  "end_time": "2025-11-23T13:55:34.836678"
+}

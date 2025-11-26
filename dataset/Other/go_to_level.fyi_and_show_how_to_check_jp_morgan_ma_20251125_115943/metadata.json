@@ -1,0 +1,31 @@
+{
+  "task_id": "go_to_level.fyi_and_show_how_to_check_jp_morgan_ma",
+  "task_query": "Go to level.fyi and show how to check JP Morgan managing director salary",
+  "app_name": "Linear",
+  "workflow_name": "go_to_level.fyi_and_show_how_to_check_jp_morgan_ma_20251125_115943",
+  "start_time": "2025-11-25T11:59:43.806057",
+  "status": "failed",
+  "total_steps": 1,
+  "last_update": "2025-11-25T11:59:50.792866",
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Navigate to https://www.levels.fyi",
+      "action_type": "navigate",
+      "action_target": "None",
+      "screenshot_path": "step_01_navigate.png",
+      "url": "https://www.levels.fyi/?tab=levels",
+      "timestamp": "2025-11-25T11:59:50.792659",
+      "reasoning": "Initial page load",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Forced capture",
+        "page_title": "Levels.fyi | Salaries & Tools to Level Up Your Career"
+      }
+    }
+  ],
+  "duration_seconds": 16.272389,
+  "success": false,
+  "error_message": "Target page, context or browser has been closed",
+  "end_time": "2025-11-25T12:00:00.078627"
+}

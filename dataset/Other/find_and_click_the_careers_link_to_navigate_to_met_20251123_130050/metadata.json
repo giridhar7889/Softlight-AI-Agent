@@ -1,0 +1,13 @@
+{
+  "task_id": "find_and_click_the_careers_link_to_navigate_to_met",
+  "task_query": "Find and click the Careers link to navigate to Meta's careers page",
+  "app_name": "Linear",
+  "workflow_name": "find_and_click_the_careers_link_to_navigate_to_met_20251123_130050",
+  "start_time": "2025-11-23T13:00:50.074353",
+  "status": "failed",
+  "success": false,
+  "error_message": "Failed to navigate to start URL",
+  "duration_seconds": 30.010804,
+  "total_steps": 0,
+  "end_time": "2025-11-23T13:01:20.086321"
+}

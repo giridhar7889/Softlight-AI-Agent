@@ -1,0 +1,62 @@
+{
+  "task_id": "ag_grid_quick_filter_english",
+  "task_query": "AG Grid: Use global filter to show rows containing English",
+  "app_name": "Linear",
+  "workflow_name": "ag_grid_quick_filter_english_20251125_152257",
+  "start_time": "2025-11-25T15:22:57.149517",
+  "status": "completed",
+  "start_url": "https://www.ag-grid.com/example/",
+  "total_steps": 3,
+  "last_update": "2025-11-25T15:23:03.135033",
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Opened AG Grid example landing page",
+      "action_type": "navigate",
+      "action_target": "https://www.ag-grid.com/example/",
+      "screenshot_path": "step_01_navigate.png",
+      "url": "https://www.ag-grid.com/example/",
+      "timestamp": "2025-11-25T15:23:01.259067",
+      "reasoning": "Baseline state before using the global filter",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Manual capture",
+        "page_title": "Demo - Performance Grid"
+      }
+    },
+    {
+      "step_number": 2,
+      "description": "Applied global quick filter for 'English'",
+      "action_type": "filter",
+      "action_target": "#global-filter",
+      "screenshot_path": "step_02_filter.png",
+      "url": "https://www.ag-grid.com/example/",
+      "timestamp": "2025-11-25T15:23:02.860918",
+      "reasoning": "Typed 'English' in the global filter to show only matching rows",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Manual capture",
+        "page_title": "Demo - Performance Grid"
+      }
+    },
+    {
+      "step_number": 3,
+      "description": "Verified filtered results show English entries",
+      "action_type": "info",
+      "action_target": "First visible row after filtering",
+      "screenshot_path": "step_03_info.png",
+      "url": "https://www.ag-grid.com/example/",
+      "timestamp": "2025-11-25T15:23:03.134919",
+      "reasoning": "Top visible language cell reads 'English' after filtering",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Manual capture",
+        "page_title": "Demo - Performance Grid"
+      }
+    }
+  ],
+  "duration_seconds": 6.00067,
+  "success": true,
+  "error_message": "",
+  "end_time": "2025-11-25T15:23:03.150553"
+}

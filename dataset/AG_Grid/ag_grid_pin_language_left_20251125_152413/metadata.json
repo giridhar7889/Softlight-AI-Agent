@@ -1,0 +1,62 @@
+{
+  "task_id": "ag_grid_pin_language_left",
+  "task_query": "AG Grid: Pin the Language column to the left",
+  "app_name": "Linear",
+  "workflow_name": "ag_grid_pin_language_left_20251125_152413",
+  "start_time": "2025-11-25T15:24:13.271778",
+  "status": "completed",
+  "start_url": "https://www.ag-grid.com/example/",
+  "total_steps": 3,
+  "last_update": "2025-11-25T15:24:21.005769",
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Opened AG Grid example landing page",
+      "action_type": "navigate",
+      "action_target": "https://www.ag-grid.com/example/",
+      "screenshot_path": "step_01_navigate.png",
+      "url": "https://www.ag-grid.com/example/",
+      "timestamp": "2025-11-25T15:24:18.752209",
+      "reasoning": "Baseline view before pinning Language column",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Manual capture",
+        "page_title": "Demo - Performance Grid"
+      }
+    },
+    {
+      "step_number": 2,
+      "description": "Pinned Language column to the left",
+      "action_type": "pin",
+      "action_target": "Language column menu",
+      "screenshot_path": "step_02_pin.png",
+      "url": "https://www.ag-grid.com/example/",
+      "timestamp": "2025-11-25T15:24:20.690254",
+      "reasoning": "Used column menu \u2192 Pin Column \u2192 Pin Left to freeze the Language column",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Manual capture",
+        "page_title": "Demo - Performance Grid"
+      }
+    },
+    {
+      "step_number": 3,
+      "description": "Confirmed Language column appears in pinned section",
+      "action_type": "verify",
+      "action_target": "Pinned header area",
+      "screenshot_path": "step_03_verify.png",
+      "url": "https://www.ag-grid.com/example/",
+      "timestamp": "2025-11-25T15:24:21.005665",
+      "reasoning": "Detected 2 pinned Language header cells in the left panel",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Manual capture",
+        "page_title": "Demo - Performance Grid"
+      }
+    }
+  ],
+  "duration_seconds": 7.749223,
+  "success": true,
+  "error_message": "",
+  "end_time": "2025-11-25T15:24:21.021339"
+}

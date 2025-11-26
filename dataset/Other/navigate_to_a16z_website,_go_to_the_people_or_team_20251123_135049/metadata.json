@@ -1,0 +1,31 @@
+{
+  "task_id": "navigate_to_a16z_website,_go_to_the_people_or_team",
+  "task_query": "Navigate to a16z website, go to the People or Team section, and find the crypto team members",
+  "app_name": "Linear",
+  "workflow_name": "navigate_to_a16z_website,_go_to_the_people_or_team_20251123_135049",
+  "start_time": "2025-11-23T13:50:49.852176",
+  "status": "failed",
+  "total_steps": 1,
+  "last_update": "2025-11-23T13:51:01.980706",
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Navigate to https://a16z.com",
+      "action_type": "navigate",
+      "action_target": "None",
+      "screenshot_path": "step_01_navigate.png",
+      "url": "https://a16z.com/",
+      "timestamp": "2025-11-23T13:51:01.980431",
+      "reasoning": "Initial page load",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Forced capture",
+        "page_title": "Andreessen Horowitz | Software Is Eating the World"
+      }
+    }
+  ],
+  "duration_seconds": 23.080405,
+  "success": false,
+  "error_message": "Target page, context or browser has been closed",
+  "end_time": "2025-11-23T13:51:12.933044"
+}

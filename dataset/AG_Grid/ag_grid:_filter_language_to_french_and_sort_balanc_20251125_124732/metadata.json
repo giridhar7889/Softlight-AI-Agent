@@ -1,0 +1,46 @@
+{
+  "task_id": "ag_grid:_filter_language_to_french_and_sort_balanc",
+  "task_query": "AG Grid: Filter Language to French and sort Balance high to low",
+  "app_name": "Linear",
+  "workflow_name": "ag_grid:_filter_language_to_french_and_sort_balanc_20251125_124732",
+  "start_time": "2025-11-25T12:47:32.141450",
+  "status": "failed",
+  "total_steps": 2,
+  "last_update": "2025-11-25T12:47:49.632564",
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Navigate to https://www.ag-grid.com/example/",
+      "action_type": "navigate",
+      "action_target": "None",
+      "screenshot_path": "step_01_navigate.png",
+      "url": "https://www.ag-grid.com/example/",
+      "timestamp": "2025-11-25T12:47:39.584711",
+      "reasoning": "Initial page load",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Forced capture",
+        "page_title": "Demo - Performance Grid"
+      }
+    },
+    {
+      "step_number": 2,
+      "description": "Filter the grid by language to show only French entries",
+      "action_type": "type",
+      "action_target": "None",
+      "screenshot_path": "step_02_type.png",
+      "url": "https://www.ag-grid.com/example/",
+      "timestamp": "2025-11-25T12:47:49.632170",
+      "reasoning": "Typing 'French' in the Language Filter Input will filter the grid to show only entries with the language set to French, which is the first part of the task.",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Initial state",
+        "page_title": "Demo - Performance Grid"
+      }
+    }
+  ],
+  "duration_seconds": 280.604972,
+  "success": false,
+  "error_message": "Maximum steps (24) reached",
+  "end_time": "2025-11-25T12:52:12.748264"
+}

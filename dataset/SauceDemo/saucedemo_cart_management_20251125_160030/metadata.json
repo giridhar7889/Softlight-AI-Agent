@@ -1,0 +1,77 @@
+{
+  "task_id": "saucedemo_cart_management",
+  "task_query": "SauceDemo: Add Backpack and Bike Light to cart, then remove Bike Light on cart page",
+  "app_name": "Linear",
+  "workflow_name": "saucedemo_cart_management_20251125_160030",
+  "start_time": "2025-11-25T16:00:30.189140",
+  "status": "completed",
+  "start_url": "https://www.saucedemo.com/",
+  "total_steps": 4,
+  "last_update": "2025-11-25T16:00:33.600216",
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Logged into SauceDemo inventory page",
+      "action_type": "login",
+      "action_target": "Inventory grid",
+      "screenshot_path": "step_01_login.png",
+      "url": "https://www.saucedemo.com/inventory.html",
+      "timestamp": "2025-11-25T16:00:32.454497",
+      "reasoning": "Baseline before adding items to cart",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Manual capture",
+        "page_title": "Swag Labs"
+      }
+    },
+    {
+      "step_number": 2,
+      "description": "Added Backpack and Bike Light to cart",
+      "action_type": "add-to-cart",
+      "action_target": "Inventory grid buttons",
+      "screenshot_path": "step_02_add-to-cart.png",
+      "url": "https://www.saucedemo.com/inventory.html",
+      "timestamp": "2025-11-25T16:00:32.796038",
+      "reasoning": "Both items now show 'Remove' indicating a state change",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Manual capture",
+        "page_title": "Swag Labs"
+      }
+    },
+    {
+      "step_number": 3,
+      "description": "Opened the cart page with both items",
+      "action_type": "navigate",
+      "action_target": "Cart badge",
+      "screenshot_path": "step_03_navigate.png",
+      "url": "https://www.saucedemo.com/cart.html",
+      "timestamp": "2025-11-25T16:00:33.472198",
+      "reasoning": "Viewing cart contents before removal",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Manual capture",
+        "page_title": "Swag Labs"
+      }
+    },
+    {
+      "step_number": 4,
+      "description": "Removed Bike Light from the cart",
+      "action_type": "remove",
+      "action_target": "Remove button on cart page",
+      "screenshot_path": "step_04_remove.png",
+      "url": "https://www.saucedemo.com/cart.html",
+      "timestamp": "2025-11-25T16:00:33.600120",
+      "reasoning": "Cart shows Backpack only; Bike Light entry disappears",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Manual capture",
+        "page_title": "Swag Labs"
+      }
+    }
+  ],
+  "duration_seconds": 3.422325,
+  "success": true,
+  "error_message": "",
+  "end_time": "2025-11-25T16:00:33.611805"
+}

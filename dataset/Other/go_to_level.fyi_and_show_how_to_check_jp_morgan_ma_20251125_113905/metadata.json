@@ -1,0 +1,61 @@
+{
+  "task_id": "go_to_level.fyi_and_show_how_to_check_jp_morgan_ma",
+  "task_query": "Go to level.fyi and show how to check JP Morgan managing director salary",
+  "app_name": "Linear",
+  "workflow_name": "go_to_level.fyi_and_show_how_to_check_jp_morgan_ma_20251125_113905",
+  "start_time": "2025-11-25T11:39:05.794642",
+  "status": "failed",
+  "total_steps": 3,
+  "last_update": "2025-11-25T11:39:40.249116",
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Navigate to https://www.levels.fyi",
+      "action_type": "navigate",
+      "action_target": "None",
+      "screenshot_path": "step_01_navigate.png",
+      "url": "https://www.levels.fyi/?tab=levels",
+      "timestamp": "2025-11-25T11:39:11.830878",
+      "reasoning": "Initial page load",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Forced capture",
+        "page_title": "Levels.fyi | Salaries & Tools to Level Up Your Career"
+      }
+    },
+    {
+      "step_number": 2,
+      "description": "Click 'Finance' button",
+      "action_type": "click",
+      "action_target": "None",
+      "screenshot_path": "step_02_click.png",
+      "url": "https://www.levels.fyi/?tab=levels",
+      "timestamp": "2025-11-25T11:39:25.428964",
+      "reasoning": "JP Morgan is a financial institution, so selecting 'Finance' should filter relevant companies and positions, bringing us closer to finding the salary information.",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Initial state",
+        "page_title": "Levels.fyi | Salaries & Tools to Level Up Your Career"
+      }
+    },
+    {
+      "step_number": 3,
+      "description": "Click 'Salaries' link",
+      "action_type": "click",
+      "action_target": "None",
+      "screenshot_path": "step_03_click.png",
+      "url": "https://www.levels.fyi/?tab=levels",
+      "timestamp": "2025-11-25T11:39:40.248787",
+      "reasoning": "Navigating to the salaries section will likely provide options to search for specific companies like JP Morgan.",
+      "metadata": {
+        "difference": 0.28125,
+        "reason": "Change after click",
+        "page_title": "Levels.fyi | Salaries & Tools to Level Up Your Career"
+      }
+    }
+  ],
+  "duration_seconds": 104.225278,
+  "success": false,
+  "error_message": "Maximum steps (8) reached",
+  "end_time": "2025-11-25T11:40:50.020346"
+}

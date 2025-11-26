@@ -1,0 +1,136 @@
+{
+  "task_id": "go_to_level.fyi_and_show_how_to_check_jp_morgan_ma",
+  "task_query": "Go to level.fyi and show how to check JP Morgan managing director salary",
+  "app_name": "Linear",
+  "workflow_name": "go_to_level.fyi_and_show_how_to_check_jp_morgan_ma_20251125_115554",
+  "start_time": "2025-11-25T11:55:54.564989",
+  "status": "failed",
+  "total_steps": 8,
+  "last_update": "2025-11-25T11:57:10.488343",
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Navigate to https://www.levels.fyi",
+      "action_type": "navigate",
+      "action_target": "None",
+      "screenshot_path": "step_01_navigate.png",
+      "url": "https://www.levels.fyi/?tab=levels",
+      "timestamp": "2025-11-25T11:56:00.705774",
+      "reasoning": "Initial page load",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Forced capture",
+        "page_title": "Levels.fyi | Salaries & Tools to Level Up Your Career"
+      }
+    },
+    {
+      "step_number": 2,
+      "description": "Type 'JP Morgan Managing Director' in the search bar",
+      "action_type": "type",
+      "action_target": "None",
+      "screenshot_path": "step_02_type.png",
+      "url": "https://www.levels.fyi/?tab=levels",
+      "timestamp": "2025-11-25T11:56:10.521738",
+      "reasoning": "Using the search bar to directly find salary information for a JP Morgan Managing Director.",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Initial state",
+        "page_title": "Levels.fyi | Salaries & Tools to Level Up Your Career"
+      }
+    },
+    {
+      "step_number": 3,
+      "description": "Click 'Salaries' to explore salary information",
+      "action_type": "click",
+      "action_target": "None",
+      "screenshot_path": "step_03_click.png",
+      "url": "https://www.levels.fyi/?tab=levels",
+      "timestamp": "2025-11-25T11:56:30.000282",
+      "reasoning": "The 'Salaries' link is likely to lead to detailed salary information, which is relevant for finding JP Morgan Managing Director salaries.",
+      "metadata": {
+        "difference": 0.3125,
+        "reason": "Change after click",
+        "page_title": "Levels.fyi | Salaries & Tools to Level Up Your Career"
+      }
+    },
+    {
+      "step_number": 4,
+      "description": "Click 'By Company' to filter salary information by company",
+      "action_type": "click",
+      "action_target": "None",
+      "screenshot_path": "step_04_click.png",
+      "url": "https://www.levels.fyi/companies",
+      "timestamp": "2025-11-25T11:56:39.195204",
+      "reasoning": "This will allow us to search specifically for JP Morgan and find salary information for the Managing Director role.",
+      "metadata": {
+        "difference": 0.3125,
+        "reason": "Change after click",
+        "page_title": "Company Directory | Levels.fyi"
+      }
+    },
+    {
+      "step_number": 5,
+      "description": "Click 'JPMorgan Chase' to view salary information",
+      "action_type": "click",
+      "action_target": "None",
+      "screenshot_path": "step_05_click.png",
+      "url": "https://www.levels.fyi/companies/jpmorgan-chase/salaries",
+      "timestamp": "2025-11-25T11:56:47.584526",
+      "reasoning": "Selecting JPMorgan Chase will likely lead to a page with detailed salary information, including for managing directors.",
+      "metadata": {
+        "difference": 0.53125,
+        "reason": "Change after click",
+        "page_title": "JPMorgan Chase Salaries | Levels.fyi"
+      }
+    },
+    {
+      "step_number": 6,
+      "description": "Enter 'Managing Director' in the search bar",
+      "action_type": "type",
+      "action_target": "None",
+      "screenshot_path": "step_06_type.png",
+      "url": "https://www.levels.fyi/companies/jpmorgan-chase/salaries",
+      "timestamp": "2025-11-25T11:56:55.248111",
+      "reasoning": "Searching for the specific role to find salary information for Managing Director at JP Morgan.",
+      "metadata": {
+        "difference": 0.34375,
+        "reason": "Change after type",
+        "page_title": "JPMorgan Chase Salaries | Levels.fyi"
+      }
+    },
+    {
+      "step_number": 7,
+      "description": "Scroll down to find Managing Director salary information",
+      "action_type": "scroll",
+      "action_target": "None",
+      "screenshot_path": "step_07_scroll.png",
+      "url": "https://www.levels.fyi/companies/jpmorgan-chase/salaries",
+      "timestamp": "2025-11-25T11:57:02.942204",
+      "reasoning": "The current view does not show Managing Director salary details. Scrolling may reveal more information.",
+      "metadata": {
+        "difference": 0.15625,
+        "reason": "Change after scroll",
+        "page_title": "JPMorgan Chase Salaries | Levels.fyi"
+      }
+    },
+    {
+      "step_number": 8,
+      "description": "Click 'compensation page' link",
+      "action_type": "click",
+      "action_target": "None",
+      "screenshot_path": "step_08_click.png",
+      "url": "https://www.levels.fyi/companies/jpmorgan-chase/salaries",
+      "timestamp": "2025-11-25T11:57:10.487960",
+      "reasoning": "This link may provide more detailed salary information, including for the Managing Director position, which is not visible in the current list.",
+      "metadata": {
+        "difference": 0.3125,
+        "reason": "Change after click",
+        "page_title": "JPMorgan Chase Salaries | Levels.fyi"
+      }
+    }
+  ],
+  "duration_seconds": 210.866186,
+  "success": false,
+  "error_message": "Maximum steps (22) reached",
+  "end_time": "2025-11-25T11:59:25.431660"
+}

@@ -1,0 +1,77 @@
+{
+  "task_id": "ag_grid_audit_view",
+  "task_query": "AG Grid: Build an audit view (quick filter English, pin Language left, sort Balance high to low)",
+  "app_name": "Linear",
+  "workflow_name": "ag_grid_audit_view_20251125_152925",
+  "start_time": "2025-11-25T15:29:25.620707",
+  "status": "completed",
+  "start_url": "https://www.ag-grid.com/example/",
+  "total_steps": 4,
+  "last_update": "2025-11-25T15:29:36.717470",
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Opened AG Grid demo landing page",
+      "action_type": "navigate",
+      "action_target": "https://www.ag-grid.com/example/",
+      "screenshot_path": "step_01_navigate.png",
+      "url": "https://www.ag-grid.com/example/",
+      "timestamp": "2025-11-25T15:29:31.528426",
+      "reasoning": "Baseline grid before building the audit view",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Manual capture",
+        "page_title": "Demo - Performance Grid"
+      }
+    },
+    {
+      "step_number": 2,
+      "description": "Applied global quick filter for 'English'",
+      "action_type": "filter",
+      "action_target": "#global-filter",
+      "screenshot_path": "step_02_filter.png",
+      "url": "https://www.ag-grid.com/example/",
+      "timestamp": "2025-11-25T15:29:33.099670",
+      "reasoning": "Focused the grid on rows containing the term 'English'",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Manual capture",
+        "page_title": "Demo - Performance Grid"
+      }
+    },
+    {
+      "step_number": 3,
+      "description": "Pinned the Language column to the left",
+      "action_type": "pin",
+      "action_target": "Language column menu",
+      "screenshot_path": "step_03_pin.png",
+      "url": "https://www.ag-grid.com/example/",
+      "timestamp": "2025-11-25T15:29:34.914896",
+      "reasoning": "Keeps Language visible while auditing filtered data",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Manual capture",
+        "page_title": "Demo - Performance Grid"
+      }
+    },
+    {
+      "step_number": 4,
+      "description": "Sorted Bank Balance column descending",
+      "action_type": "sort",
+      "action_target": "Bank Balance header",
+      "screenshot_path": "step_04_sort.png",
+      "url": "https://www.ag-grid.com/example/",
+      "timestamp": "2025-11-25T15:29:36.717349",
+      "reasoning": "Shows highest balances at the top of the filtered, pinned view",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Manual capture",
+        "page_title": "Demo - Performance Grid"
+      }
+    }
+  ],
+  "duration_seconds": 11.117738,
+  "success": true,
+  "error_message": "",
+  "end_time": "2025-11-25T15:29:36.738923"
+}

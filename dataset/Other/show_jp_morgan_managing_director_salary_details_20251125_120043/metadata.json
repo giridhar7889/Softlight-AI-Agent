@@ -1,0 +1,31 @@
+{
+  "task_id": "show_jp_morgan_managing_director_salary_details",
+  "task_query": "Show JP Morgan managing director salary details",
+  "app_name": "Linear",
+  "workflow_name": "show_jp_morgan_managing_director_salary_details_20251125_120043",
+  "start_time": "2025-11-25T12:00:43.637263",
+  "status": "failed",
+  "total_steps": 1,
+  "last_update": "2025-11-25T12:00:49.989134",
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Navigate to https://www.levels.fyi/companies/jpmorgan-chase/salaries",
+      "action_type": "navigate",
+      "action_target": "None",
+      "screenshot_path": "step_01_navigate.png",
+      "url": "https://www.levels.fyi/companies/jpmorgan-chase/salaries",
+      "timestamp": "2025-11-25T12:00:49.988727",
+      "reasoning": "Initial page load",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Forced capture",
+        "page_title": "JPMorgan Chase Salaries | Levels.fyi"
+      }
+    }
+  ],
+  "duration_seconds": 13.286638,
+  "success": false,
+  "error_message": "Target page, context or browser has been closed",
+  "end_time": "2025-11-25T12:00:56.924201"
+}

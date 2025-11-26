@@ -1,0 +1,77 @@
+{
+  "task_id": "ag_grid_column_review",
+  "task_query": "AG Grid: Quick filter Spanish, hide the Rating column via column panel, then restore it",
+  "app_name": "Linear",
+  "workflow_name": "ag_grid_column_review_20251125_152957",
+  "start_time": "2025-11-25T15:29:57.752716",
+  "status": "completed",
+  "start_url": "https://www.ag-grid.com/example/",
+  "total_steps": 4,
+  "last_update": "2025-11-25T15:30:08.118944",
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Opened AG Grid demo landing page",
+      "action_type": "navigate",
+      "action_target": "https://www.ag-grid.com/example/",
+      "screenshot_path": "step_01_navigate.png",
+      "url": "https://www.ag-grid.com/example/",
+      "timestamp": "2025-11-25T15:30:04.018961",
+      "reasoning": "Baseline view before filtering and toggling columns",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Manual capture",
+        "page_title": "Demo - Performance Grid"
+      }
+    },
+    {
+      "step_number": 2,
+      "description": "Applied global quick filter for 'Spanish'",
+      "action_type": "filter",
+      "action_target": "#global-filter",
+      "screenshot_path": "step_02_filter.png",
+      "url": "https://www.ag-grid.com/example/",
+      "timestamp": "2025-11-25T15:30:05.454777",
+      "reasoning": "Shows only the Spanish-related rows in the grid",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Manual capture",
+        "page_title": "Demo - Performance Grid"
+      }
+    },
+    {
+      "step_number": 3,
+      "description": "Hid the Rating column via the column tool panel",
+      "action_type": "hide-column",
+      "action_target": "Column tool panel toggle",
+      "screenshot_path": "step_03_hide-column.png",
+      "url": "https://www.ag-grid.com/example/",
+      "timestamp": "2025-11-25T15:30:06.942535",
+      "reasoning": "Removes the Rating column from the Spanish-focused view",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Manual capture",
+        "page_title": "Demo - Performance Grid"
+      }
+    },
+    {
+      "step_number": 4,
+      "description": "Restored the Rating column",
+      "action_type": "show-column",
+      "action_target": "Column tool panel toggle",
+      "screenshot_path": "step_04_show-column.png",
+      "url": "https://www.ag-grid.com/example/",
+      "timestamp": "2025-11-25T15:30:08.118820",
+      "reasoning": "Brings Rating back into the grid after review",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Manual capture",
+        "page_title": "Demo - Performance Grid"
+      }
+    }
+  ],
+  "duration_seconds": 10.37657,
+  "success": true,
+  "error_message": "",
+  "end_time": "2025-11-25T15:30:08.129555"
+}

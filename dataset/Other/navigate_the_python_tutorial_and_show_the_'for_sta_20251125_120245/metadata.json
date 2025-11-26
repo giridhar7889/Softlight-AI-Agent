@@ -1,0 +1,31 @@
+{
+  "task_id": "navigate_the_python_tutorial_and_show_the_'for_sta",
+  "task_query": "Navigate the Python tutorial and show the 'for statements' section",
+  "app_name": "Linear",
+  "workflow_name": "navigate_the_python_tutorial_and_show_the_'for_sta_20251125_120245",
+  "start_time": "2025-11-25T12:02:45.346440",
+  "status": "failed",
+  "total_steps": 1,
+  "last_update": "2025-11-25T12:02:49.727204",
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Navigate to https://docs.python.org/3/tutorial/controlflow.html",
+      "action_type": "navigate",
+      "action_target": "None",
+      "screenshot_path": "step_01_navigate.png",
+      "url": "https://docs.python.org/3/tutorial/controlflow.html",
+      "timestamp": "2025-11-25T12:02:49.727087",
+      "reasoning": "Initial page load",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Forced capture",
+        "page_title": "4. More Control Flow Tools \u2014 Python 3.14.0 documentation"
+      }
+    }
+  ],
+  "duration_seconds": 14.106491,
+  "success": false,
+  "error_message": "Target page, context or browser has been closed",
+  "end_time": "2025-11-25T12:02:59.453413"
+}

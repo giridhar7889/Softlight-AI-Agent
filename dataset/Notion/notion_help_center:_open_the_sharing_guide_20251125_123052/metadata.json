@@ -1,0 +1,13 @@
+{
+  "task_id": "notion_help_center:_open_the_sharing_guide",
+  "task_query": "Notion Help Center: open the sharing guide",
+  "app_name": "Linear",
+  "workflow_name": "notion_help_center:_open_the_sharing_guide_20251125_123052",
+  "start_time": "2025-11-25T12:30:52.441605",
+  "status": "failed",
+  "success": false,
+  "error_message": "Failed to navigate to start URL",
+  "duration_seconds": 0.96248,
+  "total_steps": 0,
+  "end_time": "2025-11-25T12:30:53.404228"
+}

@@ -1,0 +1,62 @@
+{
+  "task_id": "airbnb_tokyo_experiences",
+  "task_query": "Airbnb: Search for Tokyo experiences and inspect a listing",
+  "app_name": "Airbnb",
+  "workflow_name": "airbnb_tokyo_experiences_20251125_162936",
+  "start_time": "2025-11-25T16:29:36.825227",
+  "status": "completed",
+  "start_url": "https://www.airbnb.com/experiences",
+  "total_steps": 3,
+  "last_update": "2025-11-25T16:29:54.036066",
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Viewed Tokyo experience results",
+      "action_type": "search",
+      "action_target": "Experiences grid",
+      "screenshot_path": "step_01_search.png",
+      "url": "https://www.airbnb.com/s/Tokyo-food-tour/experiences?refinement_paths%5B%5D=%2Fexperiences&source=structured_search_input_header&search_type=search_query",
+      "timestamp": "2025-11-25T16:29:46.389272",
+      "reasoning": "Shows culinary experiences surfaced for Tokyo",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Manual capture",
+        "page_title": "Things to Do in Shibuya | 5-Star Authentic Experiences - Airbnb"
+      }
+    },
+    {
+      "step_number": 2,
+      "description": "Opened the top Tokyo experience",
+      "action_type": "detail",
+      "action_target": "Experience hero section",
+      "screenshot_path": "step_02_detail.png",
+      "url": "https://www.airbnb.com/experiences/4613909?location=Tokyo%20food%20tour&currentTab=experience_tab&federatedSearchId=6f7cb93b-031a-4e4c-9891-b2dee00eeb65&searchId=c176bf0f-b804-4b9b-9415-63d28f7ca71e&sectionId=fdf44903-3127-4785-a926-035d2776f4a5",
+      "timestamp": "2025-11-25T16:29:52.220370",
+      "reasoning": "Captures title, rating, and host summary",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Manual capture",
+        "page_title": "Explore Tokyo\u2019s Car Scene in a Nissan Skyline \u00b7 \u26054.88"
+      }
+    },
+    {
+      "step_number": 3,
+      "description": "Scrolled through the experience details",
+      "action_type": "itinerary",
+      "action_target": "Mid-page itinerary content",
+      "screenshot_path": "step_03_itinerary.png",
+      "url": "https://www.airbnb.com/experiences/4613909?location=Tokyo%20food%20tour&currentTab=experience_tab&federatedSearchId=6f7cb93b-031a-4e4c-9891-b2dee00eeb65&searchId=c176bf0f-b804-4b9b-9415-63d28f7ca71e&sectionId=fdf44903-3127-4785-a926-035d2776f4a5",
+      "timestamp": "2025-11-25T16:29:54.035925",
+      "reasoning": "Shows the explanatory content Agent A would read to complete the workflow",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Manual capture",
+        "page_title": "Explore Tokyo\u2019s Car Scene in a Nissan Skyline \u00b7 \u26054.88"
+      }
+    }
+  ],
+  "duration_seconds": 17.235874,
+  "success": true,
+  "error_message": "",
+  "end_time": "2025-11-25T16:29:54.061453"
+}

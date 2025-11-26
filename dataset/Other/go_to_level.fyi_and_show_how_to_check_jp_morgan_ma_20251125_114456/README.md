@@ -1,0 +1,45 @@
+# Go to level.fyi and show how to check JP Morgan managing director salary
+
+## Workflow Information
+
+- **Task ID**: go_to_level.fyi_and_show_how_to_check_jp_morgan_ma
+- **App**: Linear
+- **Timestamp**: 2025-11-25T11:44:56.227766
+- **Duration**: 87.49 seconds
+- **Total Steps**: 4
+- **Status**: ❌ Failed
+
+## Steps
+
+### Step 1: Navigate to https://www.levels.fyi
+
+- **Action**: navigate
+- **Target**: None
+- **URL**: https://www.levels.fyi/?tab=levels
+- **Screenshot**: `step_01_navigate.png`
+- **Reasoning**: Initial page load
+
+### Step 2: Click 'Salaries' link
+
+- **Action**: click
+- **Target**: None
+- **URL**: https://www.levels.fyi/?tab=levels
+- **Screenshot**: `step_02_click.png`
+- **Reasoning**: Navigating to the Salaries section will likely provide information on salaries for various positions, including managing director at JP Morgan.
+
+### Step 3: Click 'JPMorgan Chase' link
+
+- **Action**: click
+- **Target**: None
+- **URL**: https://www.levels.fyi/companies/jpmorgan-chase/salaries
+- **Screenshot**: `step_03_click.png`
+- **Reasoning**: Navigating to the JPMorgan Chase page to find salary information for a managing director.
+
+### Step 4: Enter 'Managing Director' in the search field
+
+- **Action**: type
+- **Target**: None
+- **URL**: https://www.levels.fyi/companies/jpmorgan-chase/salaries
+- **Screenshot**: `step_04_type.png`
+- **Reasoning**: Searching for the specific role to find the salary information for a Managing Director at JPMorgan Chase.
+

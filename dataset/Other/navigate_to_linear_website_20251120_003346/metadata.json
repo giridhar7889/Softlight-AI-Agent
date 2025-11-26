@@ -1,0 +1,13 @@
+{
+  "task_id": "navigate_to_linear_website",
+  "task_query": "Navigate to Linear website",
+  "app_name": "Linear",
+  "workflow_name": "navigate_to_linear_website_20251120_003346",
+  "start_time": "2025-11-20T00:33:46.765016",
+  "status": "failed",
+  "success": false,
+  "error_message": "Failed to navigate to start URL",
+  "duration_seconds": 30.006413,
+  "total_steps": 0,
+  "end_time": "2025-11-20T00:34:16.772317"
+}

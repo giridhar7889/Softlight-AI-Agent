@@ -39,9 +39,8 @@ ENV/
 # Playwright
 playwright/.cache/
 
-# Dataset (keep structure, ignore content)
-dataset/*
-!dataset/.gitkeep
+# Dataset (track content)
+!dataset/
 
 # Logs
 logs/

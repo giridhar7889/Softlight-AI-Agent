@@ -1,0 +1,31 @@
+{
+  "task_id": "notion_help_center:_open_the_page_sharing_guide",
+  "task_query": "Notion Help Center: open the page sharing guide",
+  "app_name": "Linear",
+  "workflow_name": "notion_help_center:_open_the_page_sharing_guide_20251125_122948",
+  "start_time": "2025-11-25T12:29:48.787535",
+  "status": "failed",
+  "total_steps": 1,
+  "last_update": "2025-11-25T12:29:55.207593",
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Navigate to https://www.notion.so/help",
+      "action_type": "navigate",
+      "action_target": "None",
+      "screenshot_path": "step_01_navigate.png",
+      "url": "https://www.notion.com/help",
+      "timestamp": "2025-11-25T12:29:55.207487",
+      "reasoning": "Initial page load",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Forced capture",
+        "page_title": "Help, Support, and Documentation for Notion"
+      }
+    }
+  ],
+  "duration_seconds": 13.687723,
+  "success": false,
+  "error_message": "Target page, context or browser has been closed",
+  "end_time": "2025-11-25T12:30:02.476094"
+}

@@ -1,0 +1,13 @@
+{
+  "task_id": "notion_help_center:_search_for_'sharing'_and_open_",
+  "task_query": "Notion Help Center: search for 'sharing' and open the sharing article",
+  "app_name": "Linear",
+  "workflow_name": "notion_help_center:_search_for_'sharing'_and_open__20251125_123639",
+  "start_time": "2025-11-25T12:36:39.278922",
+  "status": "failed",
+  "success": false,
+  "error_message": "Failed to navigate to start URL",
+  "duration_seconds": 0.000973,
+  "total_steps": 0,
+  "end_time": "2025-11-25T12:36:39.280008"
+}

@@ -1,0 +1,62 @@
+{
+  "task_id": "airbnb_newyork_listing",
+  "task_query": "Airbnb: Open a New York listing and review its details",
+  "app_name": "Airbnb",
+  "workflow_name": "airbnb_newyork_listing_20251125_162757",
+  "start_time": "2025-11-25T16:27:57.548517",
+  "status": "completed",
+  "start_url": "https://www.airbnb.com/",
+  "total_steps": 3,
+  "last_update": "2025-11-25T16:28:15.311817",
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Viewed New York stay results",
+      "action_type": "search",
+      "action_target": "Search results grid",
+      "screenshot_path": "step_01_search.png",
+      "url": "https://www.airbnb.com/s/New-York/homes?refinement_paths%5B%5D=%2Fhomes&search_type=search_query",
+      "timestamp": "2025-11-25T16:28:06.412570",
+      "reasoning": "Baseline before drilling into a listing",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Manual capture",
+        "page_title": "Airbnb | New York - Vacation Rentals & Places to Stay - New York"
+      }
+    },
+    {
+      "step_number": 2,
+      "description": "Opened the top New York listing",
+      "action_type": "detail",
+      "action_target": "Listing hero section",
+      "screenshot_path": "step_02_detail.png",
+      "url": "https://www.airbnb.com/s/New-York/homes?refinement_paths%5B%5D=%2Fhomes&search_type=search_query",
+      "timestamp": "2025-11-25T16:28:12.759234",
+      "reasoning": "Captures title, rating, and hero media of the selected stay",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Manual capture",
+        "page_title": "Airbnb | New York - Vacation Rentals & Places to Stay - New York"
+      }
+    },
+    {
+      "step_number": 3,
+      "description": "Scrolled further down the listing details",
+      "action_type": "scroll",
+      "action_target": "Mid-page content",
+      "screenshot_path": "step_03_scroll.png",
+      "url": "https://www.airbnb.com/s/New-York/homes?refinement_paths%5B%5D=%2Fhomes&search_type=search_query",
+      "timestamp": "2025-11-25T16:28:15.311706",
+      "reasoning": "Captures in-depth details like sleeping arrangements and highlights",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Manual capture",
+        "page_title": "Airbnb | New York - Vacation Rentals & Places to Stay - New York"
+      }
+    }
+  ],
+  "duration_seconds": 17.777829,
+  "success": true,
+  "error_message": "",
+  "end_time": "2025-11-25T16:28:15.326640"
+}

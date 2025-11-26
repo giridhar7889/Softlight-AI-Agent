@@ -1,0 +1,31 @@
+{
+  "task_id": "show_me_the_example.com_homepage",
+  "task_query": "Show me the example.com homepage",
+  "app_name": "Linear",
+  "workflow_name": "show_me_the_example.com_homepage_20251120_003425",
+  "start_time": "2025-11-20T00:34:25.044690",
+  "status": "failed",
+  "total_steps": 1,
+  "last_update": "2025-11-20T00:34:29.163259",
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Navigate to https://example.com",
+      "action_type": "navigate",
+      "action_target": "None",
+      "screenshot_path": "step_01_navigate.png",
+      "url": "https://example.com/",
+      "timestamp": "2025-11-20T00:34:29.163186",
+      "reasoning": "Initial page load",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Forced capture",
+        "page_title": "Example Domain"
+      }
+    }
+  ],
+  "duration_seconds": 11.77821,
+  "success": false,
+  "error_message": "Target page, context or browser has been closed",
+  "end_time": "2025-11-20T00:34:36.823367"
+}

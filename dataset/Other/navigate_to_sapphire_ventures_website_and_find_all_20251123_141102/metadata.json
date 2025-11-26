@@ -1,0 +1,46 @@
+{
+  "task_id": "navigate_to_sapphire_ventures_website_and_find_all",
+  "task_query": "Navigate to Sapphire Ventures website and find all articles or blog posts about Elise AI",
+  "app_name": "Linear",
+  "workflow_name": "navigate_to_sapphire_ventures_website_and_find_all_20251123_141102",
+  "start_time": "2025-11-23T14:11:02.473287",
+  "status": "failed",
+  "total_steps": 2,
+  "last_update": "2025-11-23T14:11:16.428588",
+  "steps": [
+    {
+      "step_number": 1,
+      "description": "Navigate to https://sapphireventures.com",
+      "action_type": "navigate",
+      "action_target": "None",
+      "screenshot_path": "step_01_navigate.png",
+      "url": "https://sapphireventures.com/",
+      "timestamp": "2025-11-23T14:11:09.178438",
+      "reasoning": "Initial page load",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Forced capture",
+        "page_title": "Sapphire Ventures | Enterprise VC"
+      }
+    },
+    {
+      "step_number": 2,
+      "description": "Click 'READ MORE' link",
+      "action_type": "click",
+      "action_target": "None",
+      "screenshot_path": "step_02_click.png",
+      "url": "https://sapphireventures.com/",
+      "timestamp": "2025-11-23T14:11:16.428324",
+      "reasoning": "This link likely leads to more content, potentially including articles or blog posts.",
+      "metadata": {
+        "difference": 1.0,
+        "reason": "Initial state",
+        "page_title": "Sapphire Ventures | Enterprise VC"
+      }
+    }
+  ],
+  "duration_seconds": 77.425878,
+  "success": false,
+  "error_message": "Maximum steps (10) reached",
+  "end_time": "2025-11-23T14:12:19.902671"
+}
