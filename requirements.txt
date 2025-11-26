@@ -1,0 +1,35 @@
+# Core Dependencies
+playwright==1.40.0
+python-dotenv==1.0.0
+pyyaml==6.0.1
+
+# LLM APIs
+openai>=1.50.0
+anthropic>=0.34.0
+
+# Image Processing
+pillow==10.1.0
+imagehash==4.3.1
+opencv-python==4.8.1.78
+numpy==1.26.2
+
+# Utilities
+requests==2.31.0
+pydantic==2.5.0
+tenacity==8.2.3
+
+# Logging and Monitoring
+loguru==0.7.2
+rich==13.7.0
+
+# Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-playwright==0.4.3
+
+# Data Storage
+jsonlines==4.0.0
+
+# Optional: Alternative LLM providers
+# google-generativeai==0.3.0
+

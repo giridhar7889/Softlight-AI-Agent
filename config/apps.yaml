@@ -1,0 +1,72 @@
+# Application Configuration
+# Define settings for each supported web app
+
+linear:
+  name: "Linear"
+  base_url: "https://linear.app"
+  workspace: "test916"  # Change to your workspace
+  team: "TES"  # Change to your team
+  login_required: true
+  login_url: "https://linear.app/login"
+  
+  # Timing configurations
+  wait_after_action: 1.0  # seconds
+  wait_for_navigation: 3.0  # seconds
+  page_load_timeout: 30000  # milliseconds
+  action_timeout: 8000  # milliseconds
+  
+  # Selectors (can be overridden by adapter)
+  selectors:
+    login_email: "input[type='email']"
+    login_password: "input[type='password']"
+    login_button: "button[type='submit']"
+  
+  # UI detection settings
+  change_threshold: 0.15  # How different UI must be to capture
+  ignore_regions: []  # Regions to ignore in change detection
+
+notion:
+  name: "Notion"
+  base_url: "https://www.notion.so"
+  workspace: ""  # Add your workspace
+  login_required: true
+  login_url: "https://www.notion.so/login"
+  
+  wait_after_action: 1.5
+  wait_for_navigation: 3.0
+  page_load_timeout: 30000
+  action_timeout: 8000
+  
+  selectors:
+    login_email: "input[type='email']"
+    login_continue: "button:has-text('Continue with email')"
+    login_password: "input[type='password']"
+    login_button: "button[type='submit']"
+  
+  change_threshold: 0.15
+  ignore_regions: []
+
+asana:
+  name: "Asana"
+  base_url: "https://app.asana.com"
+  workspace: ""
+  login_required: true
+  login_url: "https://app.asana.com/login"
+  
+  wait_after_action: 1.0
+  wait_for_navigation: 3.0
+  page_load_timeout: 30000
+  action_timeout: 8000
+  
+  change_threshold: 0.15
+  ignore_regions: []
+
+# Default settings for unknown apps
+default:
+  wait_after_action: 1.0
+  wait_for_navigation: 2.0
+  page_load_timeout: 30000
+  action_timeout: 7000
+  change_threshold: 0.15
+  ignore_regions: []
+

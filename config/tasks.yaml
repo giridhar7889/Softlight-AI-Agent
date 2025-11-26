@@ -1,0 +1,73 @@
+# Example Tasks Configuration
+# Define tasks to test the system
+
+tasks:
+  # Linear Tasks
+  - id: "linear_create_project"
+    app: "linear"
+    query: "How do I create a project in Linear?"
+    description: "Creates a new project with name and description"
+    max_steps: 10
+    start_url: "https://linear.app/test916/team/TES/projects"
+    
+  - id: "linear_filter_issues"
+    app: "linear"
+    query: "How do I filter issues by assignee in Linear?"
+    description: "Filters issues to show only those assigned to a specific person"
+    max_steps: 8
+    start_url: "https://linear.app/test916/team/TES/active"
+    
+  - id: "linear_create_issue"
+    app: "linear"
+    query: "How do I create a new issue in Linear?"
+    description: "Creates a new issue with title and description"
+    max_steps: 8
+    start_url: "https://linear.app/test916/team/TES/active"
+    
+  - id: "linear_change_status"
+    app: "linear"
+    query: "How do I change the status of an issue in Linear?"
+    description: "Updates an issue's status (e.g., from Todo to In Progress)"
+    max_steps: 6
+    start_url: "https://linear.app/test916/team/TES/active"
+  
+  # Notion Tasks
+  - id: "notion_create_database"
+    app: "notion"
+    query: "How do I create a database in Notion?"
+    description: "Creates a new database view"
+    max_steps: 8
+    start_url: "https://www.notion.so/"
+    
+  - id: "notion_filter_database"
+    app: "notion"
+    query: "How do I filter a database in Notion?"
+    description: "Adds filters to a database view"
+    max_steps: 10
+    start_url: "https://www.notion.so/"
+    
+  - id: "notion_add_property"
+    app: "notion"
+    query: "How do I add a select property to a Notion database?"
+    description: "Adds a new select property with options to a database"
+    max_steps: 12
+    start_url: "https://www.notion.so/"
+
+# Task Collections for batch execution
+collections:
+  linear_basics:
+    - "linear_create_project"
+    - "linear_create_issue"
+    - "linear_filter_issues"
+  
+  notion_basics:
+    - "notion_create_database"
+    - "notion_filter_database"
+  
+  all:
+    - "linear_create_project"
+    - "linear_filter_issues"
+    - "linear_create_issue"
+    - "notion_create_database"
+    - "notion_filter_database"
+

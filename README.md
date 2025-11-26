@@ -1,0 +1,111 @@
+# 🕷️ Agent B: Autonomous UI State Capture
+
+> A production-ready AI agent that navigates live web applications, reasoning about non-URL states (modals, popovers, dynamic grids) to build high-quality training datasets for upstream models.
+
+## 🎯 Problem Statement
+Modern web apps (Linear, AG Grid, Airbnb) rely heavily on client-side state. A unique URL often doesn't exist for:
+- A specific filter configuration in a data grid.
+- An open dropdown menu or modal.
+- A multi-step form halfway filled.
+
+**Agent B** solves this by autonomously navigating these states using Vision-Language Models (VLMs) and Playwright, capturing a structured "ground truth" dataset of visual state + metadata.
+
+---
+
+## 🚀 Key Capabilities
+- **Real-Time Reasoning:** Uses GPT-4o/Claude to "see" the page and decide the next action.
+- **Non-URL State Capture:** Snapshots transient UI elements like floating menus and popovers.
+- **Set-of-Marks (SoM):** Injects numbered labels for precise, hallucination-free clicking.
+- **Loop Prevention:** `ActionValidator` module prevents repetitive clicking or getting stuck.
+- **Modular Architecture:** Works across any app (Airbnb, SauceDemo, AG Grid) without hardcoded scripts.
+
+---
+
+## 🛠️ System Architecture
+
+The system follows an **Observe-Orient-Decide-Act (OODA)** loop:
+
+```
+┌──────────────────────┐      ┌──────────────────────┐
+│  User / CLI Goal     │ ───► │ Workflow Orchestrator│
+└──────────────────────┘      └──────────┬───────────┘
+                                         │
+          ┌──────────────────────────────┼──────────────────────────────┐
+          ▼                              ▼                              ▼
+┌──────────────────────┐      ┌──────────────────────┐      ┌──────────────────────┐
+│  Browser Controller  │      │      LLM Agent       │      │    State Manager     │
+│  (Playwright + SoM)  │      │   (Decision Maker)   │      │   (Dataset Builder)  │
+└──────────────────────┘      └──────────────────────┘      └──────────────────────┘
+```
+
+1.  **Browser Controller:** Navigates, clicks, types, and injects visual markers.
+2.  **LLM Agent:** Analyzes the labeled screenshot to pick the next logical step.
+3.  **State Manager:** Captures clean screenshots and metadata (URL, reasoning) into the `dataset/` folder.
+4.  **Goal Monitor:** Detects when the task is visibly complete (e.g., "Thank You" text found).
+
+---
+
+## 📦 Setup & Usage
+
+### 1. Installation
+```bash
+# Clone repo
+git clone https://github.com/yourusername/agent-b.git
+cd agent-b
+
+# Install dependencies
+pip install -r requirements.txt
+playwright install
+```
+
+### 2. Configuration
+Create a `.env` file with your API keys:
+```env
+OPENAI_API_KEY=sk-...
+ANTHROPIC_API_KEY=sk-ant-...
+HEADLESS=true
+```
+
+### 3. Running a Workflow
+You can run ad-hoc tasks via the CLI:
+```bash
+# Example: Capture AG Grid audit workflow
+python src/main.py --task "Filter Language to French and sort Balance" --start-url "https://www.ag-grid.com/example/"
+```
+
+Or run the pre-packaged validation scripts:
+```bash
+# Run the Airbnb "Paris Map" workflow
+python scripts/capture_airbnb_paris_map.py
+```
+
+---
+
+## 📂 Dataset Structure (Deliverable)
+
+All captures are stored in `dataset/` organized by App and Task.
+
+**Example: AG Grid Audit**
+`dataset/Linear/ag_grid_audit_view_french_20251125_205717/`
+- `step_01_navigate.png`: Initial grid load.
+- `step_02_filter.png`: "French" typed in filter (rows updated).
+- `step_03_pin.png`: Language column pinned left (visual verification).
+- `step_04_sort.png`: Bank Balance sorted descending.
+- `metadata.json`: Full log of URLs, timestamps, and AI reasoning.
+- `README.md`: Auto-generated narrative of the session.
+
+---
+
+## 🎥 Demo Video
+(Link to Loom video goes here)
+
+---
+
+## 🧪 Tested Workflows
+We have successfully captured complex, multi-step workflows on:
+1.  **AG Grid:** Filtering, sorting, pinning, and grouping data.
+2.  **Airbnb:** Map exploration, listing deep-dives, and experiences.
+3.  **SauceDemo:** E-commerce cart management and checkout wizard.
+
+See `dataset/` for the full artifacts.
+
