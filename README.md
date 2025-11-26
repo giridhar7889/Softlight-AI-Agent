@@ -1,8 +1,8 @@
-# 🕷️ Agent B: Autonomous UI State Capture
+#  Agent B: Autonomous UI State Capture
 
-> A production-ready AI agent that navigates live web applications, reasoning about non-URL states (modals, popovers, dynamic grids) to build high-quality training datasets for upstream models.
+> A production-ready AI agent that navigates live web applications, reasoning about non-URL states (modals, popovers, dynamic grids) .
 
-## 🎯 Problem Statement
+##  Problem Statement
 Modern web apps (Linear, AG Grid, Airbnb) rely heavily on client-side state. A unique URL often doesn't exist for:
 - A specific filter configuration in a data grid.
 - An open dropdown menu or modal.
@@ -12,7 +12,7 @@ Modern web apps (Linear, AG Grid, Airbnb) rely heavily on client-side state. A u
 
 ---
 
-## 🚀 Key Capabilities
+##  Key Capabilities
 - **Real-Time Reasoning:** Uses GPT-4o/Claude to "see" the page and decide the next action.
 - **Non-URL State Capture:** Snapshots transient UI elements like floating menus and popovers.
 - **Set-of-Marks (SoM):** Injects numbered labels for precise, hallucination-free clicking.
@@ -21,31 +21,51 @@ Modern web apps (Linear, AG Grid, Airbnb) rely heavily on client-side state. A u
 
 ---
 
-## 🛠️ System Architecture
+##  System Architecture
 
 The system follows an **Observe-Orient-Decide-Act (OODA)** loop:
 
 ```
-┌──────────────────────┐      ┌──────────────────────┐
-│  User / CLI Goal     │ ───► │ Workflow Orchestrator│
-└──────────────────────┘      └──────────┬───────────┘
-                                         │
-          ┌──────────────────────────────┼──────────────────────────────┐
-          ▼                              ▼                              ▼
-┌──────────────────────┐      ┌──────────────────────┐      ┌──────────────────────┐
-│  Browser Controller  │      │      LLM Agent       │      │    State Manager     │
-│  (Playwright + SoM)  │      │   (Decision Maker)   │      │   (Dataset Builder)  │
-└──────────────────────┘      └──────────────────────┘      └──────────────────────┘
+┌─────────────────────────────────────────────────────────────┐
+│                        User / CLI                           │
+│                    (main.py entry point)                    │
+└────────────────────────┬────────────────────────────────────┘
+                         │
+                         ▼
+┌─────────────────────────────────────────────────────────────┐
+│                  Workflow Orchestrator                      │
+│  • Coordinates all components                               │
+│  • Manages workflow lifecycle                               │
+│  • Controls execution loop                                  │
+└────┬──────────────┬──────────────┬──────────────┬───────────┘
+     │              │              │              │
+     ▼              ▼              ▼              ▼
+┌─────────┐    ┌──────────┐   ┌──────────┐   ┌──────────┐
+│ Browser │    │   LLM    │   │    UI    │   │  State   │
+│ Control │    │  Agent   │   │ Detector │   │ Manager  │
+│         │    │          │   │          │   │          │
+└────┬────┘    └────┬─────┘   └────┬─────┘   └────┬─────┘
+     │              │              │              │
+     │              │              │              │
+     └──────────────┴──────────────┴──────────────┘
+                    │
+                    ▼
+          ┌──────────────────┐
+          │   App Adapters   │
+          │  (Linear, etc)   │
+          └──────────────────┘
 ```
 
-1.  **Browser Controller:** Navigates, clicks, types, and injects visual markers.
-2.  **LLM Agent:** Analyzes the labeled screenshot to pick the next logical step.
-3.  **State Manager:** Captures clean screenshots and metadata (URL, reasoning) into the `dataset/` folder.
-4.  **Goal Monitor:** Detects when the task is visibly complete (e.g., "Thank You" text found).
+1.  **Workflow Orchestrator:** The central "brain" that manages the lifecycle. It decides when to observe, when to act, and when to stop based on goal completion.
+2.  **Browser Controller:** The "hands" of the system. Wraps Playwright to handle resilient clicking, typing, scrolling, and **Set-of-Marks (SoM)** injection.
+3.  **LLM Agent:** The "intelligence." Receives labeled screenshots and prompts from the Orchestrator to reason about the next step.
+4.  **UI Detector:** Monitors the visual state to confirm if actions succeeded (e.g., "Did the modal open?").
+5.  **State Manager:** The "memory." Captures clean screenshots and logs metadata (URL, reasoning, timestamps) into the structured `dataset/` format.
+6.  **App Adapters:** Optional plugins to handle app-specific login flows or quirks, keeping the core system generic.
 
 ---
 
-## 📦 Setup & Usage
+##  Setup & Usage
 
 ### 1. Installation
 ```bash
@@ -81,7 +101,7 @@ python scripts/capture_airbnb_paris_map.py
 
 ---
 
-## 📂 Dataset Structure (Deliverable)
+##  Dataset Structure (Deliverable)
 
 All captures are stored in `dataset/` organized by App and Task.
 
@@ -96,16 +116,15 @@ All captures are stored in `dataset/` organized by App and Task.
 
 ---
 
-## 🎥 Demo Video
+##  Demo Video
 (Link to Loom video goes here)
 
 ---
 
-## 🧪 Tested Workflows
+##  Tested Workflows
 We have successfully captured complex, multi-step workflows on:
 1.  **AG Grid:** Filtering, sorting, pinning, and grouping data.
 2.  **Airbnb:** Map exploration, listing deep-dives, and experiences.
 3.  **SauceDemo:** E-commerce cart management and checkout wizard.
 
 See `dataset/` for the full artifacts.
-
