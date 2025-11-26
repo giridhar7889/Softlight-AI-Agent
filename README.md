@@ -116,10 +116,6 @@ All captures are stored in `dataset/` organized by App and Task.
 
 ---
 
-##  Demo Video
-(Link to Loom video goes here)
-
----
 
 ##  Tested Workflows
 We have successfully captured complex, multi-step workflows on:
